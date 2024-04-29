@@ -1,0 +1,10 @@
+<div>
+  <ol>
+    <li *ngFor="let user of users">
+      Name : {{ user?.nom }}, Age : {{ user?.age }}
+      <button (click)="updateUser(user?._id)">Update</button>
+      <button (click)="deleteUser(user?._id)">Delete</button>
+    </li>
+  </ol>
+</div>
+<a href="/addUser">Add User</a>
